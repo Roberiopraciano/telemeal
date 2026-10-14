@@ -7,6 +7,7 @@
   whirl_fast - same as whirl with four turns, quicker (2.4 s loop)
   breathe_color - breathe that starts gray, bursts into colour as it expands, then fades back to gray (2.5 s loop)
   fill    - a gray globe lights up in colour tile by tile, like a progress bar, then resets (3.4 s loop)
+  skeleton, skeleton_dark - skeleton placeholder: flat globe with a shimmer sweeping across (1.6 s loop)
 
 Pass --gray to build grayscale versions (files end in _gray).
 
@@ -100,6 +101,12 @@ def fill_tracks(p):
     }
 VARIANTS['fill'] = dict(T=204, rotates=False, tracks=fill_tracks)
 
+# skeleton: every tile in one placeholder colour; tint 100 is the shimmer highlight passing over it
+SHIMMER = {'scale': [(0, 100, 'lin')], 'opacity': [(0, 100, 'lin')],
+           'tint': [(0, 0, 'io'), (12, 100, 'io'), (28, 0, 'lin')]}
+VARIANTS['skeleton'] = dict(T=96, rotates=False, tracks=SHIMMER, palette=('#e3e6ea', '#f6f7f9'))
+VARIANTS['skeleton_dark'] = dict(T=96, rotates=False, tracks=SHIMMER, palette=('#2c3036', '#4a5059'))
+
 SHIFTS = {
     'build': lambda p: round(sweep(p) * 46 + rng.uniform(0, 2)),   # left-to-right, slightly irregular
     'twinkle': lambda p: rng.randrange(96),                         # random moment for each tile
@@ -107,6 +114,8 @@ SHIFTS = {
     'whirl': lambda p: round(dist(p) * 6),
     'whirl_fast': lambda p: round(dist(p) * 6),
     'breathe_color': lambda p: round(dist(p) * 10),                 # colour spreads from the centre outwards
+    'skeleton': lambda p: round(sweep(p) * 52),                     # shimmer crosses diagonally, then a short pause
+    'skeleton_dark': lambda p: round(sweep(p) * 52),
 }
 
 def path_d(p):
@@ -150,8 +159,14 @@ def fit_zoom(tracks):
                     rmax = max(rmax, math.hypot(px, py))
     return min(1.0, (C - PAD) / rmax)
 
-def build(name, T, rotates, tracks, spin=None):
+def build(name, T, rotates, tracks, spin=None, palette=None):
     global ZOOM
+    if palette:   # one colour pair for every tile: base (tint 0) and highlight (tint 100)
+        saved = [(p['gray'], p['color']) for p in P]
+        for p in P: p['gray'], p['color'] = palette
+        try: return build(name, T, rotates, tracks, spin)
+        finally:
+            for p, (g, c) in zip(P, saved): p['gray'], p['color'] = g, c
     per_tile = callable(tracks)            # tracks(p) -> each tile gets its own timeline (in loop time)
     proto = tracks(P[0]) if per_tile else tracks
     ZOOM = fit_zoom(proto); place()
