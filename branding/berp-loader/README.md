@@ -11,9 +11,10 @@ Só o globo de pastilhas da logo, animado em loop infinito e sem emenda. Fundo t
 | **breathe** | A bola "respira": as pastilhas se juntam até formar uma esfera compacta e depois se espalham com as frestas bem abertas antes de voltar ao normal. | 2 s |
 | **whirl** | A bola compacta, gira rápido (duas voltas), vai expandindo enquanto desacelera, para exatamente no formato original e logo compacta de novo. | 2,5 s |
 | **breathe_color** | O breathe começando em cinza: a bola compacta cinza, a cor se espalha do centro para fora na explosão, assenta colorida e volta ao cinza antes do próximo ciclo. | 2,5 s |
+| **fill** | Barra de progresso no globo: ele aparece todo cinza e as pastilhas ganham cor uma de cada vez, da esquerda para a direita, cada uma com um pequeno "pulo". Com o globo todo colorido, ele fica um instante completo, volta ao cinza e recomeça. | 3,4 s |
 | **whirl_fast** | Igual ao whirl, mas com quatro voltas e mais rápido: acelera por duas voltas compactada e desacelera por mais duas enquanto expande. | 2,4 s |
 
-Todos os estilos também existem em **escala de cinza**: mesmo nome com `_gray` no final (por exemplo, `berp_loader_whirl_fast_gray.json` e `avd_berp_loader_spin_gray.xml`). O cinza vem do brilho de cada cor, então as pastilhas laranja ficam num cinza mais claro que as azuis. O `breathe_color` não tem versão `_gray`, porque ele mesmo já vai do cinza ao colorido.
+Todos os estilos também existem em **escala de cinza**: mesmo nome com `_gray` no final (por exemplo, `berp_loader_whirl_fast_gray.json` e `avd_berp_loader_spin_gray.xml`). O cinza vem do brilho de cada cor, então as pastilhas laranja ficam num cinza mais claro que as azuis. O `breathe_color` e o `fill` não têm versão `_gray`, porque eles mesmos já vão do cinza ao colorido.
 
 Nos estilos que espalham as pastilhas (breathe e breathe_color), o globo é reduzido automaticamente para que a explosão inteira caiba no quadro de 512×512.
 
@@ -25,9 +26,9 @@ Nos estilos que espalham as pastilhas (breathe e breathe_color), o globo é redu
 |---|---|---|
 | ![twinkle](preview/berp_loader_twinkle.gif) | ![breathe](preview/berp_loader_breathe.gif) | ![whirl](preview/berp_loader_whirl.gif) |
 
-| whirl_fast | breathe_color | whirl_fast_gray |
+| whirl_fast | breathe_color | fill |
 |---|---|---|
-| ![whirl_fast](preview/berp_loader_whirl_fast.gif) | ![breathe_color](preview/berp_loader_breathe_color.gif) | ![whirl_fast_gray](preview/berp_loader_whirl_fast_gray.gif) |
+| ![whirl_fast](preview/berp_loader_whirl_fast.gif) | ![breathe_color](preview/berp_loader_breathe_color.gif) | ![fill](preview/berp_loader_fill.gif) |
 
 ## Arquivos
 
@@ -37,7 +38,7 @@ Nos estilos que espalham as pastilhas (breathe e breathe_color), o globo é redu
 | `berp_loader_<estilo>.svg` | SVG com animação CSS, sem dependências (web). Com `prefers-reduced-motion`, o movimento fica mais lento (e o spin para de girar). |
 | `android/drawable/avd_berp_loader_<estilo>.xml` | Animated Vector Drawable nativo, sem biblioteca, 64dp. spin e pulse: Android 5+. Os demais usam keyframes: Android 6+ nativo; abaixo disso, carregue com `AnimatedVectorDrawableCompat.create(context, R.drawable.avd_berp_loader_build)`. |
 | `preview/` | GIF e MP4 de cada estilo. |
-| `tools/loader.py`, `tools/loader_tiles.py` | Geram tudo de novo: o primeiro faz spin e pulse, o segundo build, twinkle, breathe, breathe_color, whirl e whirl_fast (ambos usam `../berp-splash/tools/pieces.json`). |
+| `tools/loader.py`, `tools/loader_tiles.py` | Geram tudo de novo: o primeiro faz spin e pulse, o segundo build, twinkle, breathe, breathe_color, fill, whirl e whirl_fast (ambos usam `../berp-splash/tools/pieces.json`). |
 
 ## Como usar
 
@@ -57,7 +58,7 @@ Copie o XML para `res/drawable/`:
 (loader.drawable as Animatable).start()   // roda até chamar stop()
 ```
 
-Troque `spin` pelo nome do estilo que quiser (`pulse`, `build`, `twinkle`, `breathe`, `breathe_color`, `whirl`, `whirl_fast`, ou qualquer um com `_gray`) em todos os exemplos. No spin e no pulse, as pastilhas entram na onda uma a uma na primeira volta; depois o ciclo fica contínuo.
+Troque `spin` pelo nome do estilo que quiser (`pulse`, `build`, `twinkle`, `breathe`, `breathe_color`, `fill`, `whirl`, `whirl_fast`, ou qualquer um com `_gray`) em todos os exemplos. No spin e no pulse, as pastilhas entram na onda uma a uma na primeira volta; depois o ciclo fica contínuo.
 
 ### Android — Lottie
 
@@ -100,7 +101,7 @@ SizedBox(width: 64, height: 64, child: Lottie.asset('assets/berp_loader_spin.jso
 
 Em `tools/loader.py`, `VARIANTS` define o ciclo (`period`, em quadros a 60 fps), se gira (`rotate`) e a intensidade da onda: escala mínima (`smin`) e opacidade mínima (`omin`) das pastilhas apagadas.
 
-Em `tools/loader_tiles.py`, `VARIANTS` traz a linha do tempo de cada pastilha (quadros, valores e easing; `spread` é o quanto as pastilhas se afastam do centro, `tint` vai de 0 = cinza a 100 = colorido e `spin` é o giro da bola inteira), e `SHIFTS` define quando cada pastilha começa: no build segue a varredura da esquerda para a direita, no twinkle é sorteado, e no breathe e no whirl as pastilhas de fora andam um pouco depois das de dentro.
+Em `tools/loader_tiles.py`, `VARIANTS` traz a linha do tempo de cada pastilha (quadros, valores e easing; `spread` é o quanto as pastilhas se afastam do centro, `tint` vai de 0 = cinza a 100 = colorido e `spin` é o giro da bola inteira), e `SHIFTS` define quando cada pastilha começa: no build segue a varredura da esquerda para a direita, no twinkle é sorteado, no fill cada pastilha acende 2 quadros depois da anterior (`fill_tracks`), e no breathe e no whirl as pastilhas de fora andam um pouco depois das de dentro.
 
 ```bash
 python3 tools/loader.py out ../berp-splash/tools/pieces.json
