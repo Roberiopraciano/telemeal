@@ -5,10 +5,12 @@
   breathe - the ball compacts (tiles pull in until they touch) and then expands (gaps open wide) (2 s loop)
   whirl   - the ball compacts, spins fast, expands while it slows down, stops in the original shape, then compacts again (2.5 s loop)
   whirl_fast - same as whirl with four turns, quicker (2.4 s loop)
+  breathe_color - breathe that starts gray, bursts into colour as it expands, then fades back to gray (2.5 s loop)
 
 Pass --gray to build grayscale versions (files end in _gray).
 
 Every tile plays the same short timeline (TRACKS), started at its own offset inside the loop.
+Styles that spread the tiles out are scaled down automatically so the widest frame still fits the canvas.
 """
 import json, math, sys, os, random
 
@@ -17,19 +19,22 @@ if GRAY: sys.argv.remove('--gray')
 SUF = '_gray' if GRAY else ''
 OUT = sys.argv[1]
 P = [p for p in json.load(open(sys.argv[2] if len(sys.argv) > 2 else 'pieces.json')) if p['kind'] == 'tile']
-if GRAY:
-    for p in P:
-        r, g, b = (int(p['color'][i:i + 2], 16) for i in (1, 3, 5))
-        y = round(0.299 * r + 0.587 * g + 0.114 * b)   # perceived brightness keeps blue and orange distinguishable
-        p['color'] = '#%02x%02x%02x' % (y, y, y)
+for p in P:
+    r, g, b = (int(p['color'][i:i + 2], 16) for i in (1, 3, 5))
+    y = round(0.299 * r + 0.587 * g + 0.114 * b)   # perceived brightness keeps blue and orange distinguishable
+    p['gray'] = '#%02x%02x%02x' % (y, y, y)
+    if GRAY: p['color'] = p['gray']
 os.makedirs(OUT, exist_ok=True)
 
 FPS, SIZE, PAD = 60, 512, 8
 CX, CY, R = 210.05, 514.41, 251.1   # circle fitted to the globe silhouette
 SC = (SIZE / 2 - PAD) / R
-def tx(x): return round((x - CX) * SC + SIZE / 2, 1)
-def ty(y): return round((y - CY) * SC + SIZE / 2, 1)
-for p in P: p['tcx'], p['tcy'] = tx(p['cx']), ty(p['cy'])
+ZOOM = 1.0                          # per style: shrinks the globe when its tiles spread past the canvas
+def tx(x): return round((x - CX) * SC * ZOOM + SIZE / 2, 1)
+def ty(y): return round((y - CY) * SC * ZOOM + SIZE / 2, 1)
+def place():
+    for p in P: p['tcx'], p['tcy'] = tx(p['cx']), ty(p['cy'])
+place()
 
 # easing: (css/lottie cubic-bezier, android interpolator)
 EASE = {
@@ -52,7 +57,7 @@ VARIANTS = {
         'opacity': [(0, 100, 'io'), (14, 45, 'out'), (30, 100, 'lin')],
     }),
     # spread: distance of each tile from the ball centre, in % (100 = original layout)
-    'breathe': dict(T=120, rotates=False, zoom=0.86, tracks={
+    'breathe': dict(T=120, rotates=False, tracks={
         'scale':   [(0, 100, 'io'), (40, 72, 'lin'), (50, 72, 'io'), (80, 90, 'io'), (106, 100, 'lin')],
         'spread':  [(0, 100, 'io'), (40, 55, 'lin'), (50, 55, 'io'), (80, 116, 'io'), (106, 100, 'lin')],
         'opacity': [(0, 100, 'lin')],
@@ -69,6 +74,13 @@ VARIANTS = {
         'spread':  [(0, 100, 'io'), (24, 55, 'lin'), (50, 55, 'out'), (92, 100, 'lin')],
         'opacity': [(0, 100, 'lin')],
     }, spin=[(0, 0, 'lin'), (10, 0, 'in'), (50, 720, 'out'), (92, 1440, 'lin')]),
+    # tint: 0 = gray, 100 = brand colours
+    'breathe_color': dict(T=150, rotates=False, tracks={
+        'scale':   [(0, 100, 'io'), (40, 72, 'lin'), (50, 72, 'io'), (80, 90, 'io'), (106, 100, 'lin')],
+        'spread':  [(0, 100, 'io'), (40, 55, 'lin'), (50, 55, 'io'), (80, 116, 'io'), (106, 100, 'lin')],
+        'opacity': [(0, 100, 'lin')],
+        'tint':    [(0, 0, 'lin'), (50, 0, 'out'), (72, 100, 'lin'), (126, 100, 'io'), (150, 0, 'lin')],
+    }),
 }
 gx0 = min(p['cx'] for p in P); gx1 = max(p['cx'] for p in P)
 gy0 = min(p['cy'] for p in P); gy1 = max(p['cy'] for p in P)
@@ -81,10 +93,16 @@ SHIFTS = {
     'breathe': lambda p: round(dist(p) * 10),                       # outer tiles follow a little later
     'whirl': lambda p: round(dist(p) * 6),
     'whirl_fast': lambda p: round(dist(p) * 6),
+    'breathe_color': lambda p: round(dist(p) * 10),                 # colour spreads from the centre outwards
 }
 
 def path_d(p):
     return ''.join('M' + ' '.join(f'{tx(x)} {ty(y)}' for x, y in pa['pts']) + 'Z' for pa in p['paths'])
+
+def mixhex(p, v):
+    """Tile colour at tint v (0 = gray, 100 = brand colour)."""
+    a = [int(p['gray'][i:i + 2], 16) for i in (1, 3, 5)]; b = [int(p['color'][i:i + 2], 16) for i in (1, 3, 5)]
+    return '#%02x%02x%02x' % tuple(round(x + (y - x) * v / 100) for x, y in zip(a, b))
 
 def rgb(hexc):
     h = hexc.lstrip('#'); return [round(int(h[i:i + 2], 16) / 255, 4) for i in (0, 2, 4)] + [1]
@@ -103,11 +121,29 @@ def lottie_prop(track, dims, fn=None):
         ks.append(k)
     return {'a': 1, 'k': ks}
 
-def build(name, T, rotates, tracks, zoom=1.0, spin=None):
+def fit_zoom(tracks):
+    """Largest zoom (<= 1) at which every spread/scale keyframe pair stays inside the canvas."""
+    if 'spread' not in tracks: return 1.0
+    scale = dict((t, v) for t, v, e in tracks['scale'])
+    C = SIZE / 2
+    rmax = 0.0
+    for t, k, e in tracks['spread']:
+        sc = scale[t] / 100; k /= 100
+        for p in P:
+            for pa in p['paths']:
+                for x, y in pa['pts']:
+                    px = (p['cx'] - CX) * SC * k + (x - p['cx']) * SC * sc
+                    py = (p['cy'] - CY) * SC * k + (y - p['cy']) * SC * sc
+                    rmax = max(rmax, math.hypot(px, py))
+    return min(1.0, (C - PAD) / rmax)
+
+def build(name, T, rotates, tracks, spin=None):
+    global ZOOM
+    ZOOM = fit_zoom(tracks); place()
     shift = SHIFTS[name.removesuffix('_gray')]
     spread = 'spread' in tracks
+    tint = 'tint' in tracks
     C = SIZE / 2
-    zs = round(zoom * 100, 2)
     dur = round(T * 1000 / FPS)
     layers, assets, svg_paths, groups, targets = [], [], [], [], []
     for i, p in enumerate(P):
@@ -115,7 +151,9 @@ def build(name, T, rotates, tracks, zoom=1.0, spin=None):
         vx, vy = round(p['tcx'] - C, 2), round(p['tcy'] - C, 2)   # tile offset from the ball centre
         shapes = [{'ty': 'sh', 'ks': {'a': 0, 'k': {'c': True, 'v': [[tx(x), ty(y)] for x, y in pa['pts']],
                    'i': [[0, 0]] * len(pa['pts']), 'o': [[0, 0]] * len(pa['pts'])}}} for pa in p['paths']]
-        shapes += [{'ty': 'fl', 'c': {'a': 0, 'k': rgb(p['color'])}, 'o': {'a': 0, 'k': 100}, 'r': 1},
+        fill = lottie_prop(tracks['tint'], 1, lambda v: rgb(mixhex(p, v))) if tint else {'a': 0, 'k': rgb(p['color'])}
+        rest = mixhex(p, tracks['tint'][-1][1]) if tint else p['color']   # colour before the first start / static
+        shapes += [{'ty': 'fl', 'c': fill, 'o': {'a': 0, 'k': 100}, 'r': 1},
                    {'ty': 'tr', 'p': {'a': 0, 'k': [0, 0]}, 'a': {'a': 0, 'k': [0, 0]}, 's': {'a': 0, 'k': [100, 100]},
                     'r': {'a': 0, 'k': 0}, 'o': {'a': 0, 'k': 100}}]
         ks = {'o': lottie_prop(tracks['opacity'], 1),
@@ -134,30 +172,36 @@ def build(name, T, rotates, tracks, zoom=1.0, spin=None):
                                'sr': 1, 'ao': 0, 'w': SIZE, 'h': SIZE, 'ip': ip, 'op': op, 'st': st, 'bm': 0,
                                **({'parent': 9999} if spin else {}),
                                'ks': {'o': {'a': 0, 'k': 100}, 'r': {'a': 0, 'k': 0}, 'p': {'a': 0, 'k': [C, C, 0]},
-                                      'a': {'a': 0, 'k': [C, C, 0]}, 's': {'a': 0, 'k': [zs, zs, 100]}}})
+                                      'a': {'a': 0, 'k': [C, C, 0]}, 's': {'a': 0, 'k': [100, 100, 100]}}})
         # SVG: a negative delay makes the tile's timeline start s frames into the loop, already running
         delay = round(s * 1000 / FPS) - dur
         svg_paths.append(f'<path class="t" style="transform-origin:{p["tcx"]}px {p["tcy"]}px;animation-delay:{delay}ms'
-                         + (f';--vx:{vx}px;--vy:{vy}px' if spread else '') + '" '
-                         f'fill="{p["color"]}" d="{path_d(p)}"/>')
+                         + (f';--vx:{vx}px;--vy:{vy}px' if spread else '')
+                         + (f';--c:{p["color"]};--g:{p["gray"]}' if tint else '') + '" '
+                         f'fill="{rest}" d="{path_d(p)}"/>')
         # AVD: startOffset puts each tile at its moment; repeats then follow back to back
-        def anim(prop, track, scale_by):
-            kf = ''.join(f'\n                        <keyframe android:fraction="{round(t / T, 4)}" android:value="{round(v * scale_by, 3)}"'
+        def anim(prop, track, scale_by, fmt=None, vtype='floatType'):
+            fmt = fmt or (lambda v: round(v * scale_by, 3))
+            kf = ''.join(f'\n                        <keyframe android:fraction="{round(t / T, 4)}" android:value="{fmt(v)}"'
                          + ('' if j == 0 else f' android:interpolator="@android:interpolator/{EASE[track[j - 1][2]][1]}"') + '/>'
                          for j, (t, v, e) in enumerate(track + [(T, track[-1][1], 'lin')]))
             return (f'\n                <objectAnimator android:duration="{dur}" android:startOffset="{round(s * 1000 / FPS)}" '
                     f'android:repeatCount="infinite" android:interpolator="@android:interpolator/linear">'
-                    f'\n                    <propertyValuesHolder android:propertyName="{prop}" android:valueType="floatType">{kf}'
+                    f'\n                    <propertyValuesHolder android:propertyName="{prop}" android:valueType="{vtype}">{kf}'
                     f'\n                    </propertyValuesHolder>\n                </objectAnimator>')
         end = {k: v[-1][1] for k, v in tracks.items()}   # resting state before a tile's first start
         groups.append(f'''        <group android:name="g{i}" android:pivotX="{p["tcx"]}" android:pivotY="{p["tcy"]}" android:scaleX="{end['scale'] / 100}" android:scaleY="{end['scale'] / 100}">
-            <path android:name="p{i}" android:fillColor="{p["color"]}" android:fillAlpha="{end['opacity'] / 100}" android:pathData="{path_d(p)}"/>
+            <path android:name="p{i}" android:fillColor="{rest}" android:fillAlpha="{end['opacity'] / 100}" android:pathData="{path_d(p)}"/>
         </group>''')
         gset = anim('scaleX', tracks['scale'], 0.01) + anim('scaleY', tracks['scale'], 0.01)
         if rotates: gset += anim('rotation', tracks['rotation'], 1)
         if spread:
             for prop, v in (('translateX', vx), ('translateY', vy)):
                 gset += anim(prop, [(t, k - 100, e) for t, k, e in tracks['spread']], v / 100)
+        pset = anim('fillAlpha', tracks['opacity'], 0.01)
+        if tint:
+            pset = ('\n            <set>' + pset + anim('fillColor', tracks['tint'], 1, lambda v: mixhex(p, v), 'colorType')
+                    + '\n            </set>')
         targets.append(f'''    <target android:name="g{i}">
         <aapt:attr name="android:animation">
             <set>{gset}
@@ -165,7 +209,7 @@ def build(name, T, rotates, tracks, zoom=1.0, spin=None):
         </aapt:attr>
     </target>
     <target android:name="p{i}">
-        <aapt:attr name="android:animation">{anim('fillAlpha', tracks['opacity'], 0.01)}
+        <aapt:attr name="android:animation">{pset}
         </aapt:attr>
     </target>''')
 
@@ -184,6 +228,9 @@ def build(name, T, rotates, tracks, zoom=1.0, spin=None):
     anims = [('ks', 'scale', tracks['scale'], lambda v: round(v / 100, 3)),
              ('ko', 'opacity', tracks['opacity'], lambda v: round(v / 100, 3))]
     if rotates: anims.append(('kr', 'rotate', tracks['rotation'], lambda v: f'{v}deg'))
+    if tint:   # CSS keyframes switch between the tile's own gray (--g) and colour (--c); the browser blends them
+        assert all(v in (0, 100) for t, v, e in tracks['tint'])
+        anims.append(('kc', 'fill', tracks['tint'], lambda v: 'var(--c)' if v == 100 else 'var(--g)'))
     if spread:
         anims.append(('kt', 'translate', tracks['spread'],
                       lambda v: f'calc(var(--vx)*{round(v / 100 - 1, 3)}) calc(var(--vy)*{round(v / 100 - 1, 3)})'))
@@ -196,8 +243,7 @@ def build(name, T, rotates, tracks, zoom=1.0, spin=None):
     open(f'{OUT}/berp_loader_{name}.svg', 'w').write(
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {SIZE} {SIZE}" width="{SIZE}" height="{SIZE}" role="img">'
         f'<title>Carregando</title>{css}'
-        + (f'<g transform="translate({C} {C}) scale({zoom}) translate({-C} {-C})">' if zoom != 1 else '<g>')
-        + ('<g class="b">' if spin else '<g>') + f'{"".join(svg_paths)}</g></g></svg>')
+        + ('<g class="b">' if spin else '<g>') + f'{"".join(svg_paths)}</g></svg>')
 
     spin_target = ''
     if spin:
@@ -221,7 +267,7 @@ def build(name, T, rotates, tracks, zoom=1.0, spin=None):
     <aapt:attr name="android:drawable">
         <vector android:width="64dp" android:height="64dp"
             android:viewportWidth="{SIZE}" android:viewportHeight="{SIZE}">
-        <group android:name="ball" android:pivotX="{C}" android:pivotY="{C}" android:scaleX="{zoom}" android:scaleY="{zoom}">
+        <group android:name="ball" android:pivotX="{C}" android:pivotY="{C}">
 {chr(10).join(groups)}
         </group>
         </vector>
@@ -229,7 +275,8 @@ def build(name, T, rotates, tracks, zoom=1.0, spin=None):
 {spin_target}{chr(10).join(targets)}
 </animated-vector>
 ''')
-    print(name, 'period', T, 'layers', len(layers))
+    print(name, 'period', T, 'layers', len(layers), 'zoom', round(ZOOM, 3))
 
 for n, v in VARIANTS.items():
+    if GRAY and 'tint' in v['tracks']: continue   # already goes between gray and colour
     if len(sys.argv) <= 3 or n in sys.argv[3].split(','): build(n + SUF, **v)
