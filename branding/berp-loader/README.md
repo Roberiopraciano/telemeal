@@ -10,6 +10,9 @@ Só o globo de pastilhas da logo, animado em loop infinito e sem emenda. Fundo t
 | **twinkle** | O globo fica completo e cada pastilha pulsa sozinha (encolhe, apaga e volta), cada uma num momento diferente. | 1,6 s |
 | **breathe** | A bola "respira": as pastilhas se juntam até formar uma esfera compacta e depois se espalham com as frestas bem abertas antes de voltar ao normal. | 2 s |
 | **whirl** | A bola compacta, gira rápido (duas voltas), vai expandindo enquanto desacelera, para exatamente no formato original e logo compacta de novo. | 2,5 s |
+| **whirl_fast** | Igual ao whirl, mas com quatro voltas e mais rápido: acelera por duas voltas compactada e desacelera por mais duas enquanto expande. | 2,4 s |
+
+Todos os estilos também existem em **escala de cinza**: mesmo nome com `_gray` no final (por exemplo, `berp_loader_whirl_fast_gray.json` e `avd_berp_loader_spin_gray.xml`). O cinza vem do brilho de cada cor, então as pastilhas laranja ficam num cinza mais claro que as azuis.
 
 | spin | pulse | build |
 |---|---|---|
@@ -19,6 +22,10 @@ Só o globo de pastilhas da logo, animado em loop infinito e sem emenda. Fundo t
 |---|---|---|
 | ![twinkle](preview/berp_loader_twinkle.gif) | ![breathe](preview/berp_loader_breathe.gif) | ![whirl](preview/berp_loader_whirl.gif) |
 
+| whirl_fast | whirl_fast_gray | spin_gray |
+|---|---|---|
+| ![whirl_fast](preview/berp_loader_whirl_fast.gif) | ![whirl_fast_gray](preview/berp_loader_whirl_fast_gray.gif) | ![spin_gray](preview/berp_loader_spin_gray.gif) |
+
 ## Arquivos
 
 | Arquivo | Uso |
@@ -27,7 +34,7 @@ Só o globo de pastilhas da logo, animado em loop infinito e sem emenda. Fundo t
 | `berp_loader_<estilo>.svg` | SVG com animação CSS, sem dependências (web). Com `prefers-reduced-motion`, o movimento fica mais lento (e o spin para de girar). |
 | `android/drawable/avd_berp_loader_<estilo>.xml` | Animated Vector Drawable nativo, sem biblioteca, 64dp. spin e pulse: Android 5+. Os demais usam keyframes: Android 6+ nativo; abaixo disso, carregue com `AnimatedVectorDrawableCompat.create(context, R.drawable.avd_berp_loader_build)`. |
 | `preview/` | GIF e MP4 de cada estilo. |
-| `tools/loader.py`, `tools/loader_tiles.py` | Geram tudo de novo: o primeiro faz spin e pulse, o segundo build, twinkle, breathe e whirl (ambos usam `../berp-splash/tools/pieces.json`). |
+| `tools/loader.py`, `tools/loader_tiles.py` | Geram tudo de novo: o primeiro faz spin e pulse, o segundo build, twinkle, breathe, whirl e whirl_fast (ambos usam `../berp-splash/tools/pieces.json`). |
 
 ## Como usar
 
@@ -47,7 +54,7 @@ Copie o XML para `res/drawable/`:
 (loader.drawable as Animatable).start()   // roda até chamar stop()
 ```
 
-Troque `spin` pelo nome do estilo que quiser (`pulse`, `build`, `twinkle`, `breathe`, `whirl`) em todos os exemplos. No spin e no pulse, as pastilhas entram na onda uma a uma na primeira volta; depois o ciclo fica contínuo.
+Troque `spin` pelo nome do estilo que quiser (`pulse`, `build`, `twinkle`, `breathe`, `whirl`, `whirl_fast`, ou qualquer um com `_gray`) em todos os exemplos. No spin e no pulse, as pastilhas entram na onda uma a uma na primeira volta; depois o ciclo fica contínuo.
 
 ### Android — Lottie
 
@@ -95,4 +102,9 @@ Em `tools/loader_tiles.py`, `VARIANTS` traz a linha do tempo de cada pastilha (q
 ```bash
 python3 tools/loader.py out ../berp-splash/tools/pieces.json
 python3 tools/loader_tiles.py out ../berp-splash/tools/pieces.json
+# versões em escala de cinza: acrescente --gray
+python3 tools/loader.py out ../berp-splash/tools/pieces.json --gray
+python3 tools/loader_tiles.py out ../berp-splash/tools/pieces.json --gray
 ```
+
+No whirl e no whirl_fast, `spin` é o giro da bola em graus ao longo do ciclo. Use sempre múltiplos de 360 no valor final, para ela parar no formato original.

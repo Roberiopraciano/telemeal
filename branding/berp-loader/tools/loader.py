@@ -6,8 +6,16 @@ Two variants:
 """
 import json, math, sys, os
 
+GRAY = '--gray' in sys.argv          # --gray: grayscale version, files get a _gray suffix
+if GRAY: sys.argv.remove('--gray')
+SUF = '_gray' if GRAY else ''
 OUT = sys.argv[1]
 P = [p for p in json.load(open(sys.argv[2] if len(sys.argv) > 2 else 'pieces.json')) if p['kind'] == 'tile']
+if GRAY:
+    for p in P:
+        r, g, b = (int(p['color'][i:i + 2], 16) for i in (1, 3, 5))
+        y = round(0.299 * r + 0.587 * g + 0.114 * b)   # perceived brightness keeps blue and orange distinguishable
+        p['color'] = '#%02x%02x%02x' % (y, y, y)
 os.makedirs(OUT, exist_ok=True)
 
 FPS = 60
@@ -148,4 +156,4 @@ def build(name, period, rotate, smin, omin):
     open(f'{OUT}/avd_berp_loader_{name}.xml', 'w').write(avd)
     print(name, 'period', T, 'frames')
 
-for n, v in VARIANTS.items(): build(n, **v)
+for n, v in VARIANTS.items(): build(n + SUF, **v)

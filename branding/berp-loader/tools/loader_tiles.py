@@ -4,13 +4,24 @@
   twinkle - every tile pulses on its own, each at a different moment (1.6 s loop)
   breathe - the ball compacts (tiles pull in until they touch) and then expands (gaps open wide) (2 s loop)
   whirl   - the ball compacts, spins fast, expands while it slows down, stops in the original shape, then compacts again (2.5 s loop)
+  whirl_fast - same as whirl with four turns, quicker (2.4 s loop)
+
+Pass --gray to build grayscale versions (files end in _gray).
 
 Every tile plays the same short timeline (TRACKS), started at its own offset inside the loop.
 """
 import json, math, sys, os, random
 
+GRAY = '--gray' in sys.argv          # --gray: grayscale version, files get a _gray suffix
+if GRAY: sys.argv.remove('--gray')
+SUF = '_gray' if GRAY else ''
 OUT = sys.argv[1]
 P = [p for p in json.load(open(sys.argv[2] if len(sys.argv) > 2 else 'pieces.json')) if p['kind'] == 'tile']
+if GRAY:
+    for p in P:
+        r, g, b = (int(p['color'][i:i + 2], 16) for i in (1, 3, 5))
+        y = round(0.299 * r + 0.587 * g + 0.114 * b)   # perceived brightness keeps blue and orange distinguishable
+        p['color'] = '#%02x%02x%02x' % (y, y, y)
 os.makedirs(OUT, exist_ok=True)
 
 FPS, SIZE, PAD = 60, 512, 8
@@ -52,6 +63,12 @@ VARIANTS = {
         'spread':  [(0, 100, 'io'), (28, 55, 'lin'), (58, 55, 'out'), (98, 100, 'lin')],
         'opacity': [(0, 100, 'lin')],
     }, spin=[(0, 0, 'lin'), (12, 0, 'in'), (58, 360, 'out'), (106, 720, 'lin')]),
+    # four turns: speeds up for 2 turns while compact, slows down over 2 more while it expands
+    'whirl_fast': dict(T=144, rotates=False, tracks={
+        'scale':   [(0, 100, 'io'), (24, 72, 'lin'), (50, 72, 'out'), (92, 100, 'lin')],
+        'spread':  [(0, 100, 'io'), (24, 55, 'lin'), (50, 55, 'out'), (92, 100, 'lin')],
+        'opacity': [(0, 100, 'lin')],
+    }, spin=[(0, 0, 'lin'), (10, 0, 'in'), (50, 720, 'out'), (92, 1440, 'lin')]),
 }
 gx0 = min(p['cx'] for p in P); gx1 = max(p['cx'] for p in P)
 gy0 = min(p['cy'] for p in P); gy1 = max(p['cy'] for p in P)
@@ -63,6 +80,7 @@ SHIFTS = {
     'twinkle': lambda p: rng.randrange(96),                         # random moment for each tile
     'breathe': lambda p: round(dist(p) * 10),                       # outer tiles follow a little later
     'whirl': lambda p: round(dist(p) * 6),
+    'whirl_fast': lambda p: round(dist(p) * 6),
 }
 
 def path_d(p):
@@ -86,7 +104,7 @@ def lottie_prop(track, dims, fn=None):
     return {'a': 1, 'k': ks}
 
 def build(name, T, rotates, tracks, zoom=1.0, spin=None):
-    shift = SHIFTS[name]
+    shift = SHIFTS[name.removesuffix('_gray')]
     spread = 'spread' in tracks
     C = SIZE / 2
     zs = round(zoom * 100, 2)
@@ -214,4 +232,4 @@ def build(name, T, rotates, tracks, zoom=1.0, spin=None):
     print(name, 'period', T, 'layers', len(layers))
 
 for n, v in VARIANTS.items():
-    if len(sys.argv) <= 3 or n in sys.argv[3].split(','): build(n, **v)
+    if len(sys.argv) <= 3 or n in sys.argv[3].split(','): build(n + SUF, **v)
