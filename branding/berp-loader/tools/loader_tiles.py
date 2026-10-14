@@ -6,6 +6,7 @@
   whirl   - the ball compacts, spins fast, expands while it slows down, stops in the original shape, then compacts again (2.5 s loop)
   whirl_fast - same as whirl with four turns, quicker (2.4 s loop)
   breathe_color - breathe that starts gray, bursts into colour as it expands, then fades back to gray (2.5 s loop)
+  breathe_color_cycle - breathe where the colour follows the motion: gray while it contracts, colour while it expands (2 s loop)
   fill    - a gray globe lights up in colour tile by tile, like a progress bar, then resets (3.4 s loop)
   skeleton, skeleton_dark - skeleton placeholder: flat globe with a shimmer sweeping across (1.6 s loop)
   skeleton_color, skeleton_color_dark - same shimmer in brand colours: pastel tiles light up vivid as it passes
@@ -84,6 +85,13 @@ VARIANTS = {
         'opacity': [(0, 100, 'lin')],
         'tint':    [(0, 0, 'lin'), (50, 0, 'out'), (72, 100, 'lin'), (126, 100, 'io'), (150, 0, 'lin')],
     }),
+    # same motion as breathe; tint fades to gray during the contraction and back to colour during the expansion
+    'breathe_color_cycle': dict(T=120, rotates=False, tracks={
+        'scale':   [(0, 100, 'io'), (40, 72, 'lin'), (50, 72, 'io'), (80, 90, 'io'), (106, 100, 'lin')],
+        'spread':  [(0, 100, 'io'), (40, 55, 'lin'), (50, 55, 'io'), (80, 116, 'io'), (106, 100, 'lin')],
+        'opacity': [(0, 100, 'lin')],
+        'tint':    [(0, 100, 'io'), (40, 0, 'lin'), (50, 0, 'out'), (78, 100, 'lin')],
+    }),
 }
 gx0 = min(p['cx'] for p in P); gx1 = max(p['cx'] for p in P)
 gy0 = min(p['cy'] for p in P); gy1 = max(p['cy'] for p in P)
@@ -124,6 +132,7 @@ SHIFTS = {
     'whirl': lambda p: round(dist(p) * 6),
     'whirl_fast': lambda p: round(dist(p) * 6),
     'breathe_color': lambda p: round(dist(p) * 10),                 # colour spreads from the centre outwards
+    'breathe_color_cycle': lambda p: round(dist(p) * 10),
     'skeleton': lambda p: round(sweep(p) * 52),                     # shimmer crosses diagonally, then a short pause
     'skeleton_dark': lambda p: round(sweep(p) * 52),
     'skeleton_color': lambda p: round(sweep(p) * 52),
