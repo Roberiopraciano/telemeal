@@ -6,20 +6,22 @@ Só o globo de pastilhas da logo, animado em loop infinito e sem emenda. Fundo t
 |---|---|---|
 | **spin** | O globo gira enquanto uma onda de brilho percorre as pastilhas. | 2 s por volta |
 | **pulse** | O globo fica parado e a onda passa pelas pastilhas em círculo, acendendo e apagando. | 1,5 s |
+| **build** | As pastilhas se encaixam uma a uma, da esquerda para a direita, até montar o globo; depois saem na mesma ordem e o ciclo recomeça. | 2,6 s |
+| **twinkle** | O globo fica completo e cada pastilha pulsa sozinha (encolhe, apaga e volta), cada uma num momento diferente. | 1,6 s |
 
-| spin | pulse |
-|---|---|
-| ![spin](preview/berp_loader_spin.gif) | ![pulse](preview/berp_loader_pulse.gif) |
+| spin | pulse | build | twinkle |
+|---|---|---|---|
+| ![spin](preview/berp_loader_spin.gif) | ![pulse](preview/berp_loader_pulse.gif) | ![build](preview/berp_loader_build.gif) | ![twinkle](preview/berp_loader_twinkle.gif) |
 
 ## Arquivos
 
 | Arquivo | Uso |
 |---|---|
-| `berp_loader_spin.json`, `berp_loader_pulse.json` | **Lottie** (60 fps). Android, iOS, Flutter, React Native, Web. |
-| `berp_loader_spin.svg`, `berp_loader_pulse.svg` | SVG com animação CSS, sem dependências (web). Com `prefers-reduced-motion`, para de girar e pulsa mais devagar. |
-| `android/drawable/avd_berp_loader_*.xml` | Animated Vector Drawable nativo (API 21+), sem biblioteca. Tamanho padrão de 64dp. |
+| `berp_loader_<estilo>.json` | **Lottie** (60 fps). Android, iOS, Flutter, React Native, Web. |
+| `berp_loader_<estilo>.svg` | SVG com animação CSS, sem dependências (web). Com `prefers-reduced-motion`, o movimento fica mais lento (e o spin para de girar). |
+| `android/drawable/avd_berp_loader_<estilo>.xml` | Animated Vector Drawable nativo, sem biblioteca, 64dp. spin e pulse: Android 5+. build e twinkle usam keyframes: Android 6+ nativo; abaixo disso, carregue com `AnimatedVectorDrawableCompat.create(context, R.drawable.avd_berp_loader_build)`. |
 | `preview/` | GIF e MP4 de cada estilo. |
-| `tools/loader.py` | Gera tudo de novo (usa `../berp-splash/tools/pieces.json`). |
+| `tools/loader.py`, `tools/loader_tiles.py` | Geram tudo de novo: o primeiro faz spin e pulse, o segundo build e twinkle (ambos usam `../berp-splash/tools/pieces.json`). |
 
 ## Como usar
 
@@ -39,7 +41,7 @@ Copie o XML para `res/drawable/`:
 (loader.drawable as Animatable).start()   // roda até chamar stop()
 ```
 
-Na primeira volta, as pastilhas entram na onda uma a uma; depois o ciclo fica contínuo.
+Troque `spin` pelo nome do estilo que quiser (`pulse`, `build`, `twinkle`) em todos os exemplos. No spin e no pulse, as pastilhas entram na onda uma a uma na primeira volta; depois o ciclo fica contínuo.
 
 ### Android — Lottie
 
@@ -82,6 +84,9 @@ SizedBox(width: 64, height: 64, child: Lottie.asset('assets/berp_loader_spin.jso
 
 Em `tools/loader.py`, `VARIANTS` define o ciclo (`period`, em quadros a 60 fps), se gira (`rotate`) e a intensidade da onda: escala mínima (`smin`) e opacidade mínima (`omin`) das pastilhas apagadas.
 
+Em `tools/loader_tiles.py`, `VARIANTS` traz a linha do tempo de cada pastilha no build e no twinkle (quadros, valores e easing), e `SHIFTS` define quando cada pastilha começa: no build segue a varredura da esquerda para a direita, no twinkle é sorteado.
+
 ```bash
 python3 tools/loader.py out ../berp-splash/tools/pieces.json
+python3 tools/loader_tiles.py out ../berp-splash/tools/pieces.json
 ```
