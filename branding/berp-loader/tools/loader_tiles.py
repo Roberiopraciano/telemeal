@@ -8,6 +8,7 @@
   breathe_color - breathe that starts gray, bursts into colour as it expands, then fades back to gray (2.5 s loop)
   fill    - a gray globe lights up in colour tile by tile, like a progress bar, then resets (3.4 s loop)
   skeleton, skeleton_dark - skeleton placeholder: flat globe with a shimmer sweeping across (1.6 s loop)
+  skeleton_color, skeleton_color_dark - same shimmer in brand colours: pastel tiles light up vivid as it passes
 
 Pass --gray to build grayscale versions (files end in _gray).
 
@@ -107,6 +108,15 @@ SHIMMER = {'scale': [(0, 100, 'lin')], 'opacity': [(0, 100, 'lin')],
 VARIANTS['skeleton'] = dict(T=96, rotates=False, tracks=SHIMMER, palette=('#e3e6ea', '#f6f7f9'))
 VARIANTS['skeleton_dark'] = dict(T=96, rotates=False, tracks=SHIMMER, palette=('#2c3036', '#4a5059'))
 
+def toward(hexc, target, amount):
+    a = [int(hexc[i:i + 2], 16) for i in (1, 3, 5)]; b = [int(target[i:i + 2], 16) for i in (1, 3, 5)]
+    return '#%02x%02x%02x' % tuple(round(x + (y - x) * amount) for x, y in zip(a, b))
+# coloured skeleton: the tile's own colour washed toward the background, lit up to full colour by the shimmer
+VARIANTS['skeleton_color'] = dict(T=96, rotates=False, tracks=SHIMMER,
+                                  palette=lambda p: (toward(p['color'], '#ffffff', 0.62), p['color']))
+VARIANTS['skeleton_color_dark'] = dict(T=96, rotates=False, tracks=SHIMMER,
+                                       palette=lambda p: (toward(p['color'], '#1c1f24', 0.68), p['color']))
+
 SHIFTS = {
     'build': lambda p: round(sweep(p) * 46 + rng.uniform(0, 2)),   # left-to-right, slightly irregular
     'twinkle': lambda p: rng.randrange(96),                         # random moment for each tile
@@ -116,6 +126,8 @@ SHIFTS = {
     'breathe_color': lambda p: round(dist(p) * 10),                 # colour spreads from the centre outwards
     'skeleton': lambda p: round(sweep(p) * 52),                     # shimmer crosses diagonally, then a short pause
     'skeleton_dark': lambda p: round(sweep(p) * 52),
+    'skeleton_color': lambda p: round(sweep(p) * 52),
+    'skeleton_color_dark': lambda p: round(sweep(p) * 52),
 }
 
 def path_d(p):
@@ -163,7 +175,7 @@ def build(name, T, rotates, tracks, spin=None, palette=None):
     global ZOOM
     if palette:   # one colour pair for every tile: base (tint 0) and highlight (tint 100)
         saved = [(p['gray'], p['color']) for p in P]
-        for p in P: p['gray'], p['color'] = palette
+        for p in P: p['gray'], p['color'] = palette(p) if callable(palette) else palette
         try: return build(name, T, rotates, tracks, spin)
         finally:
             for p, (g, c) in zip(P, saved): p['gray'], p['color'] = g, c
