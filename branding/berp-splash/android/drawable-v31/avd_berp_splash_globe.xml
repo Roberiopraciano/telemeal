@@ -1,0 +1,1105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Berp Sistemas globe: animated icon for the Android 12+ SplashScreen API (1000 ms). -->
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector android:width="288dp" android:height="288dp"
+            android:viewportWidth="288" android:viewportHeight="288">
+        <group android:name="t0" android:pivotX="142.2" android:pivotY="71.7" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#3f9ed5" android:pathData="M136.6 68.9 136.8 69.2 137.9 70.0 138.7 71.1 139.2 71.5 146.1 74.9 146.5 74.9 146.6 74.8 146.7 74.5 146.6 74.0 146.1 73.0 145.3 72.0 144.5 71.3 142.6 70.6 140.7 70.1 140.2 69.5 139.4 69.1 137.0 68.8Z"/>
+        </group>
+        <group android:name="t1" android:pivotX="149.7" android:pivotY="71.6" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#5895bf" android:pathData="M142.6 69.4 142.7 69.6 143.6 69.9 146.1 71.0 150.4 72.3 155.4 74.1 155.9 74.0 155.8 73.6 155.1 73.0 151.1 71.2 144.3 69.6 142.9 69.3Z"/>
+        </group>
+        <group android:name="t2" android:pivotX="133.2" android:pivotY="72.3" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#3c9dd4" android:pathData="M133.0 69.5 132.3 69.8 130.6 71.1 130.2 71.6 130.2 72.0 130.4 72.6 131.5 73.8 132.8 75.1 133.5 75.3 134.1 74.8 135.5 73.3 136.1 72.4 136.2 71.8 136.1 71.3 135.5 70.9 133.5 69.7Z"/>
+        </group>
+        <group android:name="t3" android:pivotX="163.7" android:pivotY="76.3" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#41a1d0" android:pathData="M151.1 70.8 153.2 71.3 155.0 71.9 156.0 72.8 159.2 74.5 160.8 75.5 162.6 77.0 166.9 79.0 171.7 81.5 172.1 81.6 172.3 81.5 172.2 81.2 171.8 80.6 170.0 78.7 166.6 76.4 162.8 74.7 161.1 73.6 158.7 72.6 155.0 71.5 152.1 70.7 151.3 70.7Z"/>
+        </group>
+        <group android:name="t4" android:pivotX="155.1" android:pivotY="77.3" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#3da0d1" android:pathData="M148.5 72.6 148.5 72.9 149.4 74.5 149.9 76.2 150.4 76.9 158.5 81.3 160.3 82.0 160.7 82.0 160.8 81.8 161.0 81.2 160.5 79.3 158.9 76.6 154.1 74.5 149.2 72.8Z"/>
+        </group>
+        <group android:name="t5" android:pivotX="141.4" android:pivotY="77.9" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#3a9fd6" android:pathData="M138.6 72.9 138.2 73.3 137.2 75.2 135.9 76.8 135.8 77.2 135.9 77.5 136.7 78.3 142.8 82.8 143.4 83.1 143.9 83.1 144.2 82.8 144.9 81.8 146.0 79.5 146.6 77.5 146.5 77.0 146.1 76.7 140.0 73.3 139.1 72.9Z"/>
+        </group>
+        <group android:name="t6" android:pivotX="125.6" android:pivotY="78.4" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#3b9dd5" android:pathData="M127.9 73.2 127.3 73.3 125.4 74.4 121.0 77.4 120.5 78.0 120.4 78.5 120.6 79.1 121.6 81.1 123.1 83.3 123.6 83.8 124.2 83.7 129.1 79.8 130.9 78.0 131.2 77.6 131.2 77.2 131.1 77.0 129.1 74.8 128.3 73.6Z"/>
+        </group>
+        <group android:name="t7" android:pivotX="180.0" android:pivotY="85.1" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#3ea3d1" android:pathData="M171.5 78.7 171.8 79.1 173.9 80.9 178.0 85.0 183.1 88.5 187.0 91.5 187.3 91.6 187.6 91.6 187.6 91.3 187.5 91.0 186.1 89.1 181.6 84.9 176.4 81.3 172.1 78.7 171.8 78.6Z"/>
+        </group>
+        <group android:name="t8" android:pivotX="154.5" android:pivotY="86.0" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#38a1d6" android:pathData="M150.0 79.1 149.8 79.4 148.9 82.3 147.4 85.1 147.3 85.5 147.4 85.8 147.8 86.2 157.5 93.0 158.1 93.3 158.5 93.2 158.9 92.8 160.6 88.4 160.7 87.4 161.0 86.2 161.0 85.6 160.8 85.2 159.4 84.2 156.9 82.8 152.5 80.1 150.6 79.1Z"/>
+        </group>
+        <group android:name="t9" android:pivotX="170.7" android:pivotY="85.5" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#39a1d5" android:pathData="M163.8 79.2 163.7 79.7 164.3 81.2 165.0 84.4 165.5 85.2 166.5 85.9 170.7 88.5 176.0 91.9 176.6 92.2 177.0 92.1 177.2 91.5 176.5 88.2 175.5 85.9 174.8 84.8 168.4 81.1 167.5 80.7 165.0 79.4 164.1 79.1Z"/>
+        </group>
+        <group android:name="t10" android:pivotX="134.0" android:pivotY="86.7" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#389fd8" android:pathData="M133.7 79.6 133.1 79.8 130.9 82.0 127.3 85.0 126.4 85.9 126.2 86.5 126.5 87.1 127.3 88.0 130.8 91.4 133.5 93.8 134.2 94.1 135.0 93.7 138.2 90.5 140.6 87.8 141.6 86.4 141.8 86.0 141.5 85.5 141.0 85.0 139.5 83.9 134.5 80.0Z"/>
+        </group>
+        <group android:name="t11" android:pivotX="113.3" android:pivotY="87.4" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#3c9bd7" android:pathData="M117.1 80.2 116.8 80.2 116.3 80.4 110.3 84.4 107.5 86.4 106.8 87.3 106.7 87.9 107.7 91.0 108.9 93.4 109.9 94.8 110.5 94.8 111.1 94.4 119.4 87.6 120.3 86.7 120.4 86.3 120.3 86.0 118.7 83.5 117.4 80.6Z"/>
+        </group>
+        <group android:name="t12" android:pivotX="170.2" android:pivotY="96.7" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#35a3d8" android:pathData="M165.1 88.1 164.8 88.5 164.6 90.0 163.9 92.4 162.5 95.9 162.5 96.5 173.7 105.1 174.4 105.6 174.8 105.6 175.0 105.3 175.6 104.1 175.9 103.0 176.2 102.2 176.9 99.5 177.0 98.3 177.2 97.0 177.2 96.5 177.1 96.0 176.6 95.4 175.3 94.5 168.0 89.5 165.7 88.1 165.4 88.0Z"/>
+        </group>
+        <group android:name="t13" android:pivotX="186.2" android:pivotY="96.1" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#36a5d8" android:pathData="M179.7 88.1 179.6 88.5 180.3 90.2 180.6 91.6 181.1 94.9 181.5 95.8 182.4 96.7 186.3 99.7 187.6 100.9 191.7 104.4 192.0 104.6 192.3 104.6 192.4 104.2 192.3 102.5 191.5 99.1 190.2 95.8 189.1 94.6 184.3 90.9 181.1 88.7 180.0 88.1Z"/>
+        </group>
+        <group android:name="t14" android:pivotX="147.5" android:pivotY="97.4" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#37a1d7" android:pathData="M145.4 88.6 144.7 89.1 141.7 92.9 138.4 96.5 138.1 96.9 138.1 97.3 138.3 97.7 139.0 98.3 145.6 103.6 148.7 106.3 149.1 106.5 149.4 106.6 150.1 106.1 151.9 103.9 153.5 101.8 155.6 98.6 156.4 97.3 156.4 96.7 156.1 96.0 153.1 93.9 152.4 93.3 149.8 91.5 149.1 90.9 146.4 89.0 145.8 88.6Z"/>
+        </group>
+        <group android:name="t15" android:pivotX="121.4" android:pivotY="98.3" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#389ed8" android:pathData="M122.7 89.4 122.1 89.6 112.9 97.4 112.4 98.1 112.4 98.6 112.6 99.0 115.0 102.1 119.0 106.8 119.6 107.3 120.0 107.5 120.5 107.4 121.2 106.9 124.5 103.6 129.0 99.5 130.3 98.5 130.6 98.0 130.9 97.6 130.8 97.1 130.4 96.6 128.1 94.6 123.4 89.8Z"/>
+        </group>
+        <group android:name="t16" android:pivotX="98.4" android:pivotY="99.1" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#3c9bd6" android:pathData="M102.7 90.1 102.5 90.1 102.0 90.3 91.9 98.1 91.3 98.9 91.3 99.3 91.6 101.0 92.4 103.8 94.0 107.5 94.5 108.2 94.9 108.2 95.2 107.9 98.6 104.8 104.1 100.3 105.9 98.4 106.0 97.7 104.3 94.3 103.0 90.5Z"/>
+        </group>
+        <group android:name="t17" android:pivotX="186.0" android:pivotY="109.4" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#31a7db" android:pathData="M181.4 99.3 181.1 99.7 180.6 102.8 180.3 104.4 178.8 108.5 178.9 109.2 179.4 109.8 185.7 115.6 189.3 119.2 189.7 119.5 190.1 119.5 190.4 119.1 190.9 117.9 191.7 115.5 192.3 112.3 192.3 111.0 192.6 109.7 192.5 108.8 192.2 108.4 190.5 106.6 189.4 105.9 187.8 104.2 186.7 103.5 185.6 102.4 182.1 99.5 181.7 99.3Z"/>
+        </group>
+        <group android:name="t18" android:pivotX="201.0" android:pivotY="111.7" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#539fd3" android:pathData="M194.1 99.6 193.9 99.7 193.9 100.1 195.1 103.4 195.3 104.6 195.5 106.5 196.0 108.5 197.8 110.8 200.5 113.9 203.6 118.3 203.9 118.5 204.2 117.8 204.6 117.8 205.7 119.3 206.0 120.0 206.5 123.4 207.9 126.8 208.3 128.2 208.8 129.4 209.1 130.3 209.5 131.2 209.7 132.0 209.7 130.5 209.4 128.8 208.0 123.4 206.5 118.5 204.7 114.2 203.1 111.5 201.6 108.4 198.8 103.7 197.8 102.3 195.8 100.1 195.3 99.7 194.4 99.5Z"/>
+        </group>
+        <group android:name="t19" android:pivotX="163.5" android:pivotY="110.1" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#34a4da" android:pathData="M160.6 99.8 160.2 100.2 157.8 104.0 153.8 109.4 153.6 110.1 153.9 110.5 155.7 112.1 158.3 114.1 165.3 120.2 165.8 120.5 166.2 120.5 166.6 120.2 168.5 117.6 170.1 115.1 172.2 111.5 172.8 110.2 172.9 109.5 172.7 109.0 171.4 107.8 169.6 106.5 168.4 105.4 166.9 104.1 165.1 102.9 163.3 101.4 161.4 100.1 161.0 99.8Z"/>
+        </group>
+        <group android:name="t20" android:pivotX="135.1" android:pivotY="111.0" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#37a1d7" android:pathData="M134.6 100.7 134.2 100.9 133.6 101.3 127.4 107.4 126.0 108.6 124.2 110.5 123.9 111.1 124.2 111.7 127.0 114.4 128.3 115.5 133.0 119.8 134.9 121.4 135.5 121.6 136.0 121.4 137.9 119.6 142.8 114.6 143.6 113.5 145.3 111.7 145.9 110.9 146.1 110.2 145.7 109.6 144.3 108.3 143.4 107.7 142.2 106.5 139.7 104.7 138.5 103.5 135.0 100.8Z"/>
+        </group>
+        <group android:name="t21" android:pivotX="106.3" android:pivotY="112.1" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#399ed8" android:pathData="M108.2 101.8 107.7 101.9 107.0 102.4 101.1 107.6 97.3 111.4 96.8 112.1 96.8 112.6 97.3 113.5 100.1 117.5 104.1 122.5 104.4 122.7 104.9 122.6 105.4 122.1 113.1 114.4 115.2 112.5 115.8 111.9 116.0 111.4 116.0 111.0 115.7 110.5 111.5 105.6 108.8 102.2Z"/>
+        </group>
+        <group android:name="t22" android:pivotX="199.2" android:pivotY="123.7" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#30a9dd" android:pathData="M196.0 112.7 195.7 113.0 195.5 113.5 195.4 116.9 194.7 119.4 193.7 122.8 193.7 123.8 194.0 124.5 198.9 130.8 201.4 134.5 201.7 134.8 202.0 134.9 202.3 134.6 203.0 132.5 203.7 129.5 204.0 127.9 204.1 126.0 204.3 124.9 204.3 123.4 204.0 122.7 200.8 117.8 199.9 116.9 197.8 114.3 196.4 112.9Z"/>
+        </group>
+        <group android:name="t23" android:pivotX="179.5" android:pivotY="124.5" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#30a7dc" android:pathData="M177.2 113.0 176.8 113.2 176.5 113.6 174.6 117.3 173.7 118.9 170.5 123.6 170.3 124.2 170.2 124.5 170.6 125.1 176.6 131.0 180.0 134.6 180.9 135.8 181.2 136.0 181.6 136.1 182.0 135.9 182.4 135.4 186.0 129.3 188.2 124.9 188.4 124.4 188.4 123.9 188.0 123.1 181.3 116.4 177.8 113.3Z"/>
+        </group>
+        <group android:name="t24" android:pivotX="151.6" android:pivotY="125.4" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#33a4da" android:pathData="M150.5 113.8 150.1 114.0 145.7 119.0 140.2 124.8 139.9 125.2 139.9 125.5 140.0 125.9 140.4 126.3 147.3 132.3 150.5 135.5 152.2 136.9 152.8 137.1 153.2 136.8 155.8 134.1 156.5 133.1 157.4 132.2 160.4 128.3 161.3 127.4 162.8 125.4 163.0 124.7 162.7 124.0 161.7 123.4 160.2 121.9 159.3 121.3 157.6 119.5 156.6 118.8 155.5 117.7 154.5 117.0 151.3 114.2 150.8 113.9Z"/>
+        </group>
+        <group android:name="t25" android:pivotX="119.5" android:pivotY="126.5" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#36a1d9" android:pathData="M119.6 115.0 119.3 115.2 118.7 115.6 108.9 125.4 108.2 126.1 108.1 126.6 108.1 127.0 108.4 127.5 111.8 130.9 112.9 132.2 118.4 137.8 118.9 138.2 119.2 138.2 119.6 138.1 125.3 132.1 131.2 126.2 131.3 125.8 131.0 125.2 126.9 121.7 123.3 118.1 122.2 117.2 120.3 115.4Z"/>
+        </group>
+        <group android:name="t26" android:pivotX="192.9" android:pivotY="140.1" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#2eaade" android:pathData="M191.9 128.0 191.4 128.3 189.2 133.1 185.3 139.6 185.1 140.3 185.3 141.0 190.1 147.5 192.6 151.7 193.0 152.1 193.4 152.3 193.7 152.1 194.2 151.5 197.5 146.2 199.1 143.0 199.4 141.9 200.3 140.4 200.4 139.9 200.2 139.3 199.2 137.7 198.7 136.7 196.5 133.5 196.0 132.9 194.4 130.5 192.6 128.5 192.2 128.1Z"/>
+        </group>
+        <group android:name="t27" android:pivotX="207.7" android:pivotY="139.5" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#30acdd" android:pathData="M206.6 127.9 206.4 128.1 206.3 128.6 206.2 131.5 205.6 134.3 204.3 139.1 204.3 139.8 206.3 145.1 207.4 148.4 207.8 150.1 208.0 150.5 208.2 150.6 208.6 150.3 209.3 148.6 210.0 145.8 210.1 144.3 210.7 141.8 210.6 139.2 210.0 136.1 209.3 133.7 208.1 130.5 206.9 128.2Z"/>
+        </group>
+        <group android:name="t28" android:pivotX="168.0" android:pivotY="141.0" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#30a7dd" android:pathData="M167.3 128.7 166.9 128.9 166.3 129.4 163.7 133.0 157.4 140.6 157.1 141.2 157.3 141.8 159.1 143.6 160.2 144.9 164.1 148.9 168.0 153.2 168.4 153.2 168.9 153.0 171.0 150.8 172.5 148.8 173.6 147.6 177.6 142.5 178.5 141.0 178.6 140.6 178.4 140.1 176.6 138.0 174.9 136.2 174.1 135.2 170.0 131.0 167.7 128.9Z"/>
+        </group>
+        <group android:name="t29" android:pivotX="136.2" android:pivotY="142.1" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#32a4dc" android:pathData="M135.8 129.8 135.5 129.9 134.9 130.4 128.2 137.2 123.9 141.7 123.6 142.4 123.9 143.0 126.1 145.2 131.2 149.7 133.9 152.4 136.1 154.2 136.7 154.5 137.2 154.2 138.7 152.7 140.7 150.4 143.2 147.9 144.5 146.4 147.6 143.2 148.5 142.0 148.7 141.6 148.3 140.9 142.3 135.3 141.0 134.3 139.0 132.3 136.5 130.1Z"/>
+        </group>
+        <group android:name="t30" android:pivotX="201.2" android:pivotY="156.2" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#2dacde" android:pathData="M202.6 144.5 202.2 144.7 201.5 145.9 199.6 149.8 195.8 155.9 195.5 156.6 195.7 157.4 197.6 162.0 198.7 165.5 199.0 167.2 199.2 167.5 199.4 167.6 199.9 167.4 201.1 166.0 203.1 162.8 205.1 159.1 206.4 156.2 206.4 155.3 205.0 150.3 203.6 146.2 202.9 144.8Z"/>
+        </group>
+        <group android:name="t31" android:pivotX="181.3" android:pivotY="156.8" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#2daadf" android:pathData="M182.1 144.8 181.6 145.0 178.7 148.9 174.8 153.8 172.2 156.7 171.9 157.4 172.2 158.1 174.9 161.5 177.6 165.2 179.5 168.2 179.8 168.5 180.1 168.6 180.7 168.4 181.8 167.2 183.0 166.1 184.2 164.4 186.9 161.4 188.7 159.0 189.6 158.1 190.0 157.5 190.2 156.8 190.1 156.1 189.0 154.2 188.2 153.0 186.7 150.7 185.1 148.5 184.2 147.1 182.6 145.2Z"/>
+        </group>
+        <group android:name="t32" android:pivotX="152.9" android:pivotY="157.8" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#2ea7df" android:pathData="M153.1 145.9 152.6 146.0 151.9 146.6 148.2 150.8 144.5 154.6 143.4 155.9 141.6 157.7 141.2 158.4 141.6 159.2 143.7 161.3 146.5 163.7 152.0 169.3 152.7 169.6 153.1 169.5 153.5 169.3 158.0 164.7 160.3 162.2 164.1 158.4 164.3 158.0 164.5 157.7 164.4 157.2 163.8 156.5 159.2 151.8 156.5 148.9 154.1 146.5 153.5 146.0Z"/>
+        </group>
+        <group android:name="t33" android:pivotX="209.6" android:pivotY="155.8" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#39a8d7" android:pathData="M210.9 147.0 210.2 148.8 209.9 151.3 208.7 155.9 208.6 159.3 208.3 162.5 208.0 164.0 208.1 164.6 208.3 164.3 208.7 162.9 210.0 157.3 210.1 156.2 210.6 153.1 210.7 151.0 210.9 149.2Z"/>
+        </group>
+        <group android:name="t34" android:pivotX="189.5" android:pivotY="171.9" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#2babdf" android:pathData="M192.6 161.1 192.1 161.2 191.3 162.0 187.0 167.2 182.8 171.8 182.3 172.4 182.4 173.1 184.4 177.7 185.0 179.2 185.7 182.1 186.1 182.6 186.7 182.4 187.9 181.3 192.1 177.0 192.9 175.9 194.7 174.1 196.1 172.2 196.2 170.8 195.7 169.1 195.5 168.0 195.1 167.3 194.5 165.2 194.0 164.1 193.7 163.0 192.9 161.4Z"/>
+        </group>
+        <group android:name="t35" android:pivotX="203.2" android:pivotY="171.5" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#2facdd" android:pathData="M206.7 161.1 206.4 161.1 206.1 161.5 205.4 163.3 203.8 166.2 200.1 171.6 199.9 172.4 199.8 175.4 199.6 177.8 199.3 179.7 199.0 181.0 199.1 181.5 199.5 181.4 200.6 180.3 203.4 176.4 205.6 171.7 206.6 168.7 206.8 167.2 207.1 166.2 207.0 162.0 206.9 161.3Z"/>
+        </group>
+        <group android:name="t36" android:pivotX="166.4" android:pivotY="172.7" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#2baae1" android:pathData="M168.0 161.8 167.7 161.9 167.3 162.2 164.1 165.4 162.3 167.4 159.7 169.8 156.8 172.7 156.4 173.4 156.7 174.1 159.1 176.7 162.3 180.6 164.0 183.0 164.7 183.5 165.0 183.5 165.4 183.2 168.1 180.6 169.6 179.3 172.7 176.3 176.0 173.2 176.2 172.8 176.1 172.4 175.8 171.8 174.1 169.3 169.1 162.7 168.5 162.1Z"/>
+        </group>
+        <group android:name="t37" android:pivotX="191.6" android:pivotY="185.6" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#2cacde" android:pathData="M196.6 176.3 196.3 176.4 195.9 176.6 194.3 178.6 187.2 185.6 186.8 186.2 186.6 186.8 186.4 191.3 185.8 194.3 185.9 194.7 186.3 194.6 187.3 194.0 190.0 191.4 191.0 190.8 195.2 186.6 195.6 186.0 196.2 184.4 196.8 181.5 196.8 178.0 196.7 176.6Z"/>
+        </group>
+        <group android:name="t38" android:pivotX="174.8" android:pivotY="186.1" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#28ace2" android:pathData="M178.4 176.6 178.0 176.6 177.5 176.9 173.8 180.6 168.6 185.3 167.4 186.2 167.0 186.8 166.9 187.1 167.0 187.5 168.8 190.8 169.9 193.4 170.3 194.9 170.8 195.4 171.4 195.3 175.4 192.2 181.3 187.2 182.0 186.4 182.1 185.9 182.0 185.1 181.2 182.3 179.4 178.1 178.8 177.0Z"/>
+        </group>
+        <group android:name="t39" android:pivotX="198.6" android:pivotY="185.1" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#39a7d2" android:pathData="M202.0 179.8 201.1 180.7 200.4 182.0 197.5 185.8 195.3 189.8 195.3 190.2 195.7 190.0 196.8 188.5 199.8 184.2 202.0 180.2Z"/>
+        </group>
+        <group android:name="t40" android:pivotX="187.2" android:pivotY="197.4" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#30abda" android:pathData="M194.0 189.7 193.6 189.9 191.0 192.5 188.9 194.1 187.4 195.7 184.5 198.0 182.1 201.7 179.7 204.6 179.6 205.0 179.8 205.1 180.1 204.9 183.4 202.5 188.5 198.0 191.9 193.8 193.3 191.6 194.0 190.1Z"/>
+        </group>
+        <group android:name="t41" android:pivotX="177.0" android:pivotY="197.7" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#29ace1" android:pathData="M182.8 189.9 182.4 189.9 181.9 190.1 177.2 194.1 171.5 198.5 171.2 199.2 171.2 201.3 171.0 202.9 170.5 205.0 170.5 205.4 170.8 205.4 171.3 205.2 179.1 200.0 181.6 198.1 181.8 197.7 182.4 196.0 182.9 193.6 182.9 190.2Z"/>
+        </group>
+        <group android:name="t42" android:pivotX="172.6" android:pivotY="207.5" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#2daade" android:pathData="M179.8 201.7 179.6 201.6 174.9 204.7 169.0 208.3 168.4 208.8 166.7 210.9 164.6 212.6 164.4 212.9 164.4 213.0 165.0 212.9 167.7 211.6 169.6 210.7 173.6 208.6 174.8 207.8 176.3 206.4 178.1 204.5 179.6 202.4Z"/>
+        </group>
+        <group android:name="t43" android:pivotX="164.0" android:pivotY="214.1" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#559ebf" android:pathData="M168.2 212.1 167.9 212.2 164.8 213.3 160.0 215.5 159.8 215.7 160.3 215.8 162.6 215.0 167.6 212.7 168.1 212.4Z"/>
+        </group>
+        <group android:name="t44" android:pivotX="160.6" android:pivotY="78.5" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#d3a24a" android:pathData="M155.1 74.7 155.2 74.9 155.8 75.2 156.9 75.6 158.9 76.6 160.5 79.2 160.9 80.7 161.2 81.3 163.0 82.2 163.3 82.3 163.5 82.2 163.6 81.8 163.5 81.4 162.9 79.6 160.9 76.8 160.2 76.4 157.0 75.1 156.3 74.3Z"/>
+        </group>
+        <group android:name="t45" android:pivotX="160.6" android:pivotY="86.4" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#db9f39" android:pathData="M153.1 79.7 152.9 80.1 153.3 80.5 159.4 84.1 160.8 85.1 161.0 85.6 161.1 86.2 160.8 87.4 160.7 88.2 159.7 91.0 159.7 91.4 160.0 91.8 161.7 92.9 162.1 93.0 162.4 92.9 162.9 92.1 163.8 89.3 164.2 86.9 164.2 85.7 164.0 85.2 163.7 84.8 155.5 80.3 153.9 79.5 153.5 79.5Z"/>
+        </group>
+        <group android:name="t46" android:pivotX="174.9" android:pivotY="85.8" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#d6a74d" android:pathData="M166.0 79.5 166.0 79.7 166.3 80.0 168.5 81.1 174.9 84.7 175.6 85.9 176.0 87.0 176.5 88.1 177.1 90.3 177.2 90.8 177.8 91.3 179.0 92.0 179.4 92.2 179.7 92.2 179.8 91.8 179.6 91.1 178.9 88.6 177.8 86.7 176.6 84.8 171.8 81.8 168.2 79.9 166.7 79.5 166.3 79.4Z"/>
+        </group>
+        <group android:name="t47" android:pivotX="155.2" android:pivotY="97.5" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#df9e32" android:pathData="M149.3 88.6 148.9 88.9 148.4 89.5 148.3 90.0 148.4 90.3 149.8 91.4 152.4 93.2 153.1 93.8 156.0 95.9 156.5 96.5 156.4 97.3 155.7 98.6 152.8 102.8 152.0 104.1 152.1 104.6 153.0 105.5 154.1 106.2 154.6 106.3 155.2 105.9 158.6 101.0 160.7 97.2 160.9 96.5 160.4 96.0 158.0 94.3 156.7 93.5 152.8 90.5 150.1 88.7 149.7 88.6Z"/>
+        </group>
+        <group android:name="t48" android:pivotX="176.4" android:pivotY="97.0" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#e0a63c" android:pathData="M168.5 88.6 168.2 88.8 168.1 89.1 168.2 89.4 168.4 89.7 175.3 94.4 176.6 95.4 177.2 96.0 177.3 96.4 177.3 97.0 177.0 98.3 177.0 99.4 175.9 103.4 176.3 103.9 178.0 105.2 178.4 105.3 178.7 105.3 179.1 104.7 180.2 100.0 180.3 96.6 180.1 95.9 179.6 95.3 176.7 93.2 172.5 90.4 169.1 88.6 168.7 88.5Z"/>
+        </group>
+        <group android:name="t49" android:pivotX="191.0" android:pivotY="96.5" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#dcb666" android:pathData="M181.9 88.9 181.9 89.1 184.3 90.8 185.0 91.4 188.6 94.2 189.8 95.2 190.3 95.7 191.6 99.1 192.5 102.9 192.8 103.4 193.4 104.0 194.0 104.4 194.3 104.4 194.4 104.2 194.1 101.8 193.6 100.1 191.7 96.2 191.7 95.8 192.2 95.9 194.2 98.0 195.0 99.2 195.9 100.0 197.0 101.3 197.5 101.6 197.3 101.1 195.5 98.5 193.1 95.5 188.6 90.7 187.8 90.1 187.4 90.0 187.3 90.1 187.3 90.5 187.7 90.9 189.1 92.0 189.6 92.5 190.9 94.3 191.1 94.7 191.0 94.9 190.7 94.9 190.3 94.7 187.5 92.1 185.9 90.9 182.3 88.9Z"/>
+        </group>
+        <group android:name="t50" android:pivotX="191.4" android:pivotY="109.6" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#e6ae40" android:pathData="M184.3 99.5 184.1 99.9 184.0 100.4 184.1 100.9 184.3 101.3 185.6 102.3 186.8 103.5 187.7 104.1 189.5 105.8 190.4 106.5 192.6 108.7 192.7 109.7 192.4 111.0 192.4 112.3 191.7 115.5 191.2 117.2 191.5 117.8 192.9 119.2 193.3 119.4 193.6 119.4 193.8 119.1 195.2 113.2 195.0 109.2 194.8 108.5 194.3 107.7 193.4 106.8 187.5 101.6 185.1 99.7 184.6 99.5Z"/>
+        </group>
+        <group android:name="t51" android:pivotX="171.6" android:pivotY="110.3" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#e5a537" android:pathData="M165.1 99.9 164.7 100.2 164.0 101.5 164.0 101.8 164.1 102.0 168.4 105.3 169.6 106.5 171.4 107.7 172.8 109.0 173.0 109.4 173.0 110.0 172.3 111.5 170.1 115.1 168.8 117.1 168.5 117.8 168.7 118.4 169.3 119.1 170.7 120.2 171.3 120.4 171.7 120.0 175.2 114.2 176.7 111.1 177.2 109.8 177.2 109.3 176.7 108.6 174.7 106.9 171.1 104.3 168.7 102.6 165.7 100.0Z"/>
+        </group>
+        <group android:name="t52" android:pivotX="144.4" android:pivotY="110.9" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#e09c31" android:pathData="M139.6 100.5 138.9 100.8 137.8 101.9 137.6 102.4 137.7 102.8 145.9 109.7 146.2 110.2 146.1 110.7 145.4 111.8 143.6 113.6 142.9 114.6 138.7 118.9 138.7 119.2 138.9 119.5 140.8 121.3 141.5 121.5 142.0 121.2 144.1 118.7 147.3 115.5 148.1 114.4 149.7 112.8 151.2 110.9 151.5 110.2 151.4 109.8 151.0 109.3 145.7 105.2 141.3 101.4 140.3 100.8Z"/>
+        </group>
+        <group android:name="t53" android:pivotX="83.5" android:pivotY="112.8" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#dd8f20" android:pathData="M87.3 102.5 87.0 102.5 86.7 102.7 84.1 105.0 78.7 110.5 77.2 112.3 76.9 112.8 76.8 113.4 78.0 118.6 79.7 122.9 80.1 123.4 80.4 123.3 80.8 123.0 83.9 119.3 89.9 113.2 90.6 112.3 90.6 111.7 90.5 111.3 88.8 107.3 87.7 103.0 87.5 102.6Z"/>
+        </group>
+        <group android:name="t54" android:pivotX="186.9" android:pivotY="124.5" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#ebad3b" android:pathData="M181.3 113.0 180.9 113.3 180.4 114.6 180.3 115.1 180.4 115.5 188.0 123.0 188.4 123.8 188.4 124.4 188.3 125.0 186.1 129.2 184.2 132.5 183.9 133.2 184.1 133.9 185.3 135.4 185.8 135.8 186.3 135.9 186.7 135.5 187.2 134.7 190.3 128.9 192.1 124.5 192.2 123.8 191.8 123.0 187.3 118.3 185.5 116.8 182.1 113.3 181.7 113.0Z"/>
+        </group>
+        <group android:name="t55" android:pivotX="203.5" android:pivotY="124.3" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#e6b54e" android:pathData="M198.6 113.3 198.3 113.6 198.2 114.0 198.2 114.5 198.5 115.0 201.0 118.1 204.1 122.7 204.4 123.4 204.4 124.8 204.1 126.0 204.1 128.0 203.0 132.8 203.1 133.3 203.9 134.6 204.2 134.9 204.5 134.9 204.9 134.4 206.1 128.2 206.1 125.3 205.8 123.0 204.4 120.5 202.5 117.5 199.8 114.2 199.1 113.4Z"/>
+        </group>
+        <group android:name="t56" android:pivotX="161.1" android:pivotY="125.3" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#e5a433" android:pathData="M155.9 113.7 155.4 113.9 154.0 115.6 153.9 116.0 154.0 116.4 156.6 118.8 157.6 119.5 159.3 121.2 160.3 121.9 161.8 123.3 162.7 124.0 163.1 124.7 162.8 125.4 161.4 127.4 160.4 128.4 157.4 132.3 156.5 133.2 155.8 134.3 155.8 134.7 156.1 135.0 157.9 136.7 158.3 137.0 158.6 137.0 159.1 136.7 166.4 127.6 168.1 125.2 168.3 124.5 167.9 123.9 164.8 121.1 160.2 117.3 156.5 113.9Z"/>
+        </group>
+        <group android:name="t57" android:pivotX="91.2" android:pivotY="127.5" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#de9020" android:pathData="M92.7 116.1 92.4 116.1 92.0 116.3 88.6 119.8 83.7 125.4 82.5 126.9 82.2 127.6 82.5 128.5 84.7 132.1 87.8 136.7 89.4 138.8 89.8 139.1 90.2 139.1 90.5 138.8 94.9 133.3 99.8 128.0 100.3 127.3 100.6 126.8 100.3 126.2 96.3 121.1 93.2 116.5Z"/>
+        </group>
+        <group android:name="t58" android:pivotX="198.9" android:pivotY="140.0" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#edb240" android:pathData="M195.5 128.2 195.1 128.5 194.5 129.5 194.4 130.0 194.4 130.4 195.8 132.5 196.6 133.5 198.6 136.5 199.3 137.7 200.3 139.3 200.5 139.9 200.4 140.4 199.5 141.9 199.1 143.1 197.6 146.1 195.6 149.5 195.6 150.1 196.3 151.3 196.6 151.7 196.9 151.8 197.2 151.7 197.6 151.2 200.8 145.8 202.0 143.1 203.0 140.3 203.1 139.7 202.9 139.1 201.4 136.1 199.1 132.6 197.1 130.1 196.0 128.5Z"/>
+        </group>
+        <group android:name="t59" android:pivotX="176.7" android:pivotY="140.6" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#ebab39" android:pathData="M172.4 128.5 171.9 128.8 170.8 130.3 170.5 130.9 170.6 131.4 174.3 135.2 175.0 136.2 176.7 137.9 178.4 140.0 178.7 140.6 178.6 141.0 177.6 142.5 173.7 147.7 172.5 148.9 171.6 150.3 171.5 150.9 171.8 151.4 173.1 152.9 173.6 153.1 174.1 152.9 174.6 152.4 177.6 148.3 181.6 143.4 183.1 141.1 183.3 140.4 183.0 139.7 181.3 137.6 178.4 134.6 177.2 133.2 174.1 130.0 173.2 128.9 172.8 128.6Z"/>
+        </group>
+        <group android:name="t60" android:pivotX="209.3" android:pivotY="132.5" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#d8d7ac" android:pathData="M208.2 129.4 208.0 129.6 208.0 130.0 209.4 133.7 210.3 136.8 210.4 136.4 210.3 134.9 210.1 133.2 209.6 132.1 209.4 131.2 208.8 129.8 208.5 129.5Z"/>
+        </group>
+        <group android:name="t61" android:pivotX="104.1" android:pivotY="143.2" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#e19321" android:pathData="M103.9 130.9 103.4 131.2 98.1 137.2 94.1 142.1 93.6 142.9 93.4 143.4 93.7 144.1 94.1 144.7 100.4 151.7 103.7 155.0 104.4 155.4 104.7 155.3 105.1 155.0 109.9 149.0 113.9 144.6 115.0 143.2 115.2 142.6 114.9 142.0 112.7 140.0 105.9 132.9 104.7 131.4 104.3 131.1Z"/>
+        </group>
+        <group android:name="t62" android:pivotX="188.7" android:pivotY="156.2" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#eeb13e" android:pathData="M186.7 144.7 186.2 145.0 184.9 146.7 184.6 147.2 184.7 147.7 184.9 148.2 186.5 150.3 188.2 153.0 189.1 154.2 190.1 156.0 190.3 156.8 190.1 157.5 189.6 158.2 188.8 159.0 186.9 161.5 183.3 165.7 183.1 166.4 183.2 167.1 183.8 168.0 184.4 168.3 184.8 168.3 185.1 168.0 187.6 164.4 191.0 161.1 192.4 159.3 193.9 157.2 194.1 156.6 194.0 156.2 193.7 155.3 191.0 150.8 187.0 144.8Z"/>
+        </group>
+        <group android:name="t63" android:pivotX="205.2" android:pivotY="156.1" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#e3b752" android:pathData="M204.9 145.1 204.6 145.3 204.2 145.9 203.9 146.4 203.9 146.9 205.1 150.3 205.9 152.9 206.0 153.7 206.6 155.5 206.6 156.2 203.3 162.5 201.8 164.8 201.4 165.7 201.3 166.5 201.5 166.8 201.8 167.0 202.3 166.8 204.7 163.4 206.0 161.1 207.0 158.1 207.1 157.4 206.8 156.1 207.4 155.1 207.6 154.7 207.6 153.1 206.9 149.7 205.7 146.9 205.3 145.5Z"/>
+        </group>
+        <group android:name="t64" android:pivotX="120.4" android:pivotY="158.9" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#e49724" android:pathData="M119.5 146.9 118.9 147.3 117.5 148.7 110.2 157.2 108.9 158.9 108.7 159.6 108.9 160.0 118.7 168.8 120.5 170.3 121.2 170.6 121.7 170.4 122.1 170.0 126.0 165.7 130.9 160.8 132.2 159.3 132.3 158.7 132.1 158.2 130.9 157.0 123.9 150.9 120.3 147.4 119.9 147.0Z"/>
+        </group>
+        <group android:name="t65" android:pivotX="195.2" android:pivotY="171.1" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#ebb343" android:pathData="M196.0 161.0 195.6 161.1 195.2 161.4 194.1 162.9 193.9 163.5 194.1 164.1 194.6 165.2 195.2 167.3 195.6 168.3 195.7 169.1 196.3 170.8 196.2 172.2 194.8 174.2 193.0 175.9 192.3 176.9 188.8 180.4 188.7 180.8 188.7 181.2 189.0 181.5 189.4 181.7 189.7 181.7 190.2 181.4 191.9 179.9 193.8 178.0 196.8 174.7 198.3 172.8 198.8 171.8 198.8 170.8 198.4 168.1 197.9 166.0 196.3 161.3Z"/>
+        </group>
+        <group android:name="t66" android:pivotX="137.2" android:pivotY="173.7" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#e79b26" android:pathData="M136.9 162.7 136.2 163.1 130.4 169.0 129.4 170.2 126.3 173.4 125.9 173.9 125.7 174.3 126.0 174.9 126.9 175.8 131.2 179.2 137.0 184.3 137.4 184.4 137.9 184.2 139.3 183.0 145.3 177.1 147.6 175.1 148.5 174.2 148.7 173.6 148.5 173.1 147.3 171.9 145.8 170.7 142.9 167.9 137.5 163.0Z"/>
+        </group>
+        <group android:name="t67" android:pivotX="197.6" android:pivotY="180.7" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#e9b94e" android:pathData="M198.7 176.6 198.4 176.6 197.3 177.7 197.0 178.3 196.9 181.5 196.4 183.7 196.2 185.0 196.3 185.2 196.8 185.0 197.4 184.1 198.4 181.2 198.6 180.5 198.7 178.2 198.9 177.0Z"/>
+        </group>
+        <group android:name="t68" android:pivotX="151.1" android:pivotY="186.9" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#ea9f29" android:pathData="M152.3 177.3 151.9 177.4 151.3 177.9 147.6 181.6 141.6 187.3 141.4 187.7 141.4 188.1 141.8 188.5 145.3 191.8 149.1 195.8 149.5 196.1 149.8 196.3 150.1 196.2 150.7 195.8 157.4 190.0 158.6 189.2 160.4 187.5 160.7 187.0 160.3 186.2 157.6 182.9 152.9 177.7Z"/>
+        </group>
+        <group android:name="t69" android:pivotX="191.4" android:pivotY="191.0" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#d8c278" android:pathData="M194.9 187.3 194.7 187.3 194.3 187.6 191.1 190.8 190.1 191.5 188.2 193.2 187.9 193.7 188.0 194.0 188.3 194.1 188.8 193.9 191.6 191.7 194.1 189.0 194.8 187.8Z"/>
+        </group>
+        <group android:name="t70" android:pivotX="159.8" android:pivotY="198.4" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#eba12b" android:pathData="M163.1 190.5 162.8 190.5 162.5 190.6 161.0 191.7 158.0 194.4 153.9 197.6 152.3 199.2 152.3 199.5 152.3 199.8 153.5 201.4 154.7 203.5 155.6 205.6 156.0 206.0 156.5 206.0 165.7 199.7 166.3 199.1 166.6 198.7 166.7 198.1 166.5 197.4 165.3 194.1 163.7 191.2Z"/>
+        </group>
+        <group android:name="t71" android:pivotX="162.0" android:pivotY="207.7" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#e9a02c" android:pathData="M167.4 201.7 167.1 201.6 166.7 201.8 165.5 202.7 157.6 207.9 156.9 208.5 156.5 209.2 156.3 211.9 155.8 213.2 155.8 213.5 156.4 213.4 157.7 212.7 163.2 209.8 165.7 208.5 166.1 208.1 166.6 207.4 167.3 205.1 167.5 202.6 167.5 202.1Z"/>
+        </group>
+        <group android:name="t72" android:pivotX="157.1" android:pivotY="215.0" android:scaleX="0" android:scaleY="0">
+            <path android:fillColor="#e59f33" android:pathData="M164.0 211.2 163.8 211.1 163.3 211.3 158.6 213.6 154.3 215.4 152.2 216.8 149.0 218.4 148.8 218.7 149.4 218.6 151.8 218.0 154.5 216.8 157.4 215.8 159.1 215.1 160.7 214.3 162.5 212.9 163.8 211.7Z"/>
+        </group>
+        </vector>
+    </aapt:attr>
+    <target android:name="t0">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="235" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="235" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="235" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t1">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="265" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="265" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="265" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t2">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="206" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="206" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="206" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t3">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="324" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="324" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="324" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t4">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="294" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="294" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="294" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t5">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="235" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="235" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="235" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t6">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="176" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="176" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="176" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t7">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="382" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="382" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="382" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t8">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="294" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="294" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="294" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t9">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="353" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="353" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="353" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t10">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="221" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="221" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="221" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t11">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="147" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="147" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="147" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t12">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="353" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="353" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="353" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t13">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="412" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="412" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="412" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t14">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="279" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="279" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="279" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t15">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="191" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="191" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="191" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t16">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="103" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="103" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="103" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t17">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="426" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="426" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="426" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t18">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="485" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="485" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="485" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t19">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="353" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="353" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="353" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t20">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="250" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="250" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="250" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t21">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="147" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="147" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="147" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t22">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="485" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="485" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="485" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t23">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="412" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="412" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="412" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t24">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="324" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="324" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="324" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t25">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="206" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="206" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="206" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t26">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="485" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="485" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="485" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t27">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="529" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="529" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="529" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t28">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="397" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="397" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="397" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t29">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="279" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="279" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="279" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t30">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="529" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="529" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="529" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t31">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="456" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="456" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="456" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t32">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="353" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="353" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="353" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t33">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="559" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="559" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="559" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t34">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="500" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="500" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="500" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t35">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="544" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="544" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="544" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t36">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="412" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="412" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="412" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t37">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="515" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="515" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="515" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t38">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="456" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="456" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="456" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t39">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="544" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="544" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="544" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t40">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="515" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="515" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="515" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t41">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="471" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="471" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="471" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t42">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="471" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="471" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="471" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t43">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="441" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="441" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="441" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t44">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="309" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="309" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="309" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t45">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="309" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="309" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="309" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t46">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="368" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="368" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="368" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t47">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="309" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="309" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="309" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t48">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="382" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="382" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="382" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t49">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="441" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="441" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="441" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t50">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="441" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="441" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="441" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t51">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="382" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="382" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="382" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t52">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="279" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="279" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="279" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t53">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="59" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="59" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="59" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t54">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="441" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="441" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="441" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t55">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="500" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="500" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="500" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t56">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="353" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="353" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="353" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t57">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="103" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="103" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="103" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t58">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="500" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="500" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="500" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t59">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="426" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="426" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="426" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t60">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="529" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="529" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="529" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t61">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="162" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="162" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="162" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t62">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="485" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="485" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="485" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t63">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="544" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="544" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="544" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t64">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="235" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="235" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="235" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t65">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="515" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="515" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="515" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t66">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="309" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="309" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="309" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t67">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="529" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="529" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="529" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t68">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="368" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="368" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="368" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t69">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="515" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="515" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="515" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t70">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="412" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="412" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="412" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t71">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="426" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="426" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="426" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="t72">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator android:propertyName="scaleX" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="426" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY" android:valueFrom="0" android:valueTo="1"
+                    android:startOffset="426" android:duration="382" android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="rotation" android:valueFrom="-28" android:valueTo="0"
+                    android:startOffset="426" android:duration="382" android:interpolator="@android:interpolator/decelerate_cubic"/>
+            </set>
+        </aapt:attr>
+    </target>
+</animated-vector>
